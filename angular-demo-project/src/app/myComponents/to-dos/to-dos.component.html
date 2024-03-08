@@ -1,0 +1,7 @@
+<div *ngFor="let todo of todos">
+  <app-todo-item
+    class="text-center"
+    [todo]="todo"
+    (onDelete)="deleteTodo($event)"
+  ></app-todo-item>
+</div>

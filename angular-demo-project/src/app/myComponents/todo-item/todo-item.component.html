@@ -1,0 +1,24 @@
+<div>
+  <table class="table">
+    <caption>
+      "Table for to do list"
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Active</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{ todo.serialNo }}</th>
+        <td>{{ todo.title }}</td>
+        <td>{{ todo.description }}</td>
+        <td>{{ todo.active }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-danger" (click)="onClick(todo)">Delete</button>
+</div>
